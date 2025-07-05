@@ -1,0 +1,52 @@
+{
+  "name": "simple-storefront",
+  "version": "1.0.0",
+  "description": "Digital product ecommerce platform with feature-based architecture",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "setup": "npm install && npm run build",
+    "type-check": "turbo run type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/sqlite3": "^3.1.11",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "ecommerce",
+    "digital-products",
+    "react",
+    "nodejs",
+    "typescript",
+    "monorepo",
+    "turbo"
+  ],
+  "author": "iamanojkumar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamanojkumar/simple-storefront.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamanojkumar/simple-storefront/issues"
+  },
+  "homepage": "https://github.com/iamanojkumar/simple-storefront#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "sqlite3": "^5.1.7"
+  }
+}
